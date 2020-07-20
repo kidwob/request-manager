@@ -1,0 +1,72 @@
+[2020-03-24 18:02:01] local.ERROR: Server error: `POST http://itemapi.local.com/api/items/8?_method=DELETE` resulted in a `500 Internal Server Error` response:
+<!doctype html>
+<html class="theme-light">
+<head>
+    <!-- Hide dumps asap -->
+    <style>
+        pre.sf-dump {
+        (truncated...)
+ {"exception":"[object] (GuzzleHttp\\Exception\\ServerException(code: 500): Server error: `POST http://itemapi.local.com/api/items/8?_method=DELETE` resulted in a `500 Internal Server Error` response:
+<!doctype html>
+<html class=\"theme-light\">
+<head>
+    <!-- Hide dumps asap -->
+    <style>
+        pre.sf-dump {
+        (truncated...)
+ at F:\\Programmes\\laragon\\www\equestman\\vendor\\guzzlehttp\\guzzle\\src\\Exception\\RequestException.php:113)
+[stacktrace]
+#0 F:\\Programmes\\laragon\\www\equestman\\vendor\\guzzlehttp\\guzzle\\src\\Middleware.php(65): GuzzleHttp\\Exception\\RequestException::create(Object(GuzzleHttp\\Psr7\\Request), Object(GuzzleHttp\\Psr7\\Response))
+#1 F:\\Programmes\\laragon\\www\equestman\\vendor\\guzzlehttp\\promises\\src\\Promise.php(203): GuzzleHttp\\Middleware::GuzzleHttp\\{closure}(Object(GuzzleHttp\\Psr7\\Response))
+#2 F:\\Programmes\\laragon\\www\equestman\\vendor\\guzzlehttp\\promises\\src\\Promise.php(156): GuzzleHttp\\Promise\\Promise::callHandler(1, Object(GuzzleHttp\\Psr7\\Response), Array)
+#3 F:\\Programmes\\laragon\\www\equestman\\vendor\\guzzlehttp\\promises\\src\\TaskQueue.php(47): GuzzleHttp\\Promise\\Promise::GuzzleHttp\\Promise\\{closure}()
+#4 F:\\Programmes\\laragon\\www\equestman\\vendor\\guzzlehttp\\promises\\src\\Promise.php(246): GuzzleHttp\\Promise\\TaskQueue->run(true)
+#5 F:\\Programmes\\laragon\\www\equestman\\vendor\\guzzlehttp\\promises\\src\\Promise.php(223): GuzzleHttp\\Promise\\Promise->invokeWaitFn()
+#6 F:\\Programmes\\laragon\\www\equestman\\vendor\\guzzlehttp\\promises\\src\\Promise.php(267): GuzzleHttp\\Promise\\Promise->waitIfPending()
+#7 F:\\Programmes\\laragon\\www\equestman\\vendor\\guzzlehttp\\promises\\src\\Promise.php(225): GuzzleHttp\\Promise\\Promise->invokeWaitList()
+#8 F:\\Programmes\\laragon\\www\equestman\\vendor\\guzzlehttp\\promises\\src\\Promise.php(62): GuzzleHttp\\Promise\\Promise->waitIfPending()
+#9 F:\\Programmes\\laragon\\www\equestman\\vendor\\guzzlehttp\\guzzle\\src\\Client.php(131): GuzzleHttp\\Promise\\Promise->wait()
+#10 F:\\Programmes\\laragon\\www\equestman\\vendor\\guzzlehttp\\guzzle\\src\\Client.php(89): GuzzleHttp\\Client->request('post', 'http://itemapi....', Array)
+#11 F:\\Programmes\\laragon\\www\equestman\\app\\Http\\Controllers\\RequestsController.php(138): GuzzleHttp\\Client->__call('post', Array)
+#12 [internal function]: App\\Http\\Controllers\\RequestsController->destroy('8')
+#13 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#14 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('destroy', Array)
+#15 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\RequestsController), 'destroy')
+#16 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
+#17 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
+#18 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#19 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(76): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(56): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#33 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#34 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#35 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#36 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#37 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#38 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 F:\\Programmes\\laragon\\www\equestman\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#50 F:\\Programmes\\laragon\\www\equestman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#51 F:\\Programmes\\laragon\\www\equestman\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#52 {main}
+"} 
